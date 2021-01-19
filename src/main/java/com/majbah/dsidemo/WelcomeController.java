@@ -24,7 +24,7 @@ public class WelcomeController {
     @PostMapping(value = "/" )
     public ResponseEntity post(@RequestBody String req){
         log.info(req);
-        return (ResponseEntity) ResponseEntity.status(HttpStatus.OK);
+        return  ResponseEntity.status(HttpStatus.OK).body("ok");
     }
 
 }
